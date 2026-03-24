@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #020617;
+  --color-brand-card: #0f172a;
+}
+
+:root {
+  background-color: #020617;
+  color: white;
+}
+
+/* Ein bisschen schöneres Styling für die Slider */
+input[type="range"] {
+  @apply cursor-pointer accent-sky-500;
+}
