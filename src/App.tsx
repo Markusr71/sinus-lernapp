@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom/client';
 import React, { useState } from 'react';
 import * as Tabs from '@radix-ui/react-tabs';
 import * as Accordion from '@radix-ui/react-accordion';
@@ -103,5 +104,13 @@ export default function App() {
         </Tabs.Root>
       </div>
     </div>
+  );
+}
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
   );
 }
