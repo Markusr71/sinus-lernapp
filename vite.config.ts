@@ -5,9 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   preview: {
-    port: 8080,
-    strictPort: true,
-    // Diese Zeile erlaubt es Railway, die Seite anzuzeigen:
+    // Wir lassen den Port weg, damit Vite den von Railway nutzt
     allowedHosts: true 
   },
 })
